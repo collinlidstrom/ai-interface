@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# AI Interface
+Interface for interacting with back-end AI systems.
+
+NOTE:
+In these workflow files, when you push to the main branch, it will:
+
+Checkout your code
+Install dependencies with npm install
+Build your project with npm run build
+Deploy your project to Netlify using the Netlify CLI
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
