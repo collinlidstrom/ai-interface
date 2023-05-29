@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Alert } from "@mui/material";
 
 const WeatherAndDate = () => {
     const [weather, setWeather] = useState(null);
@@ -6,19 +7,21 @@ const WeatherAndDate = () => {
 
     useEffect(() => {
         const fetchWeather = async () => {
-              const response = await fetch(
-                `http://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_AI_API_KEY}`
-              );
+            const response = await fetch(
+                `http://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+            );
             const data = await response.json();
             setWeather(data);
         };
-        fetchWeather();
+        // fetchWeather();
     }, []);
 
     return (
         <div>
-            <h1>Today's date: {date}</h1>
-            {weather && (
+            <Alert variant="filled" severity="info">
+                Today's Date: {date}
+            </Alert>
+            {weather?.main && weather?.weather[0] && (
                 <div>
                     <h2>Weather in Chicago:</h2>
                     <p>Temperature: {weather.main.temp}°F</p>
