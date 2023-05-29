@@ -1,6 +1,8 @@
 # AI Interface
 Interface for interacting with back-end AI systems.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c73e4920-3744-42f1-a066-13290b406214/deploy-status)](https://app.netlify.com/sites/ai-interface-clidstrom/deploys)
+
 NOTE:
 In these workflow files, when you push to the main branch, it will:
 
