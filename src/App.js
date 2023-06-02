@@ -1,16 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-
-import TextInput from './components/TextInput';
-import WeatherAndDate from './components/WeatherAndDate';
+// import SignIn from './components/user/SignIn';
+// import SignUp from './components/user/SignUp';
+import Dashboard from './components/dashboard/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <WeatherAndDate />
-        <TextInput />
-      </header>
+      <Dashboard />
     </div>
   );
 }
